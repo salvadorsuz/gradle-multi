@@ -1,0 +1,11 @@
+before_install:
+  - chmod +x gradlew
+
+install: ./gradlew assemble
+
+script: ./gradlew clean build --info
+
+language: java
+
+jdk:
+  - oraclejdk11
